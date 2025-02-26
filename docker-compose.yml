@@ -1,0 +1,42 @@
+services:
+  app:
+    image: node:16
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3001:3001"
+    depends_on:
+      cpp_server:
+        condition: service_started
+        required: true
+      mongo:
+        condition: service_started
+        required: true
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/movies_db
+      SERVER_HOST: cpp_server
+      SERVER_PORT: "8080"
+      JWT_SECRET: my_super_secret_key
+    command: ["sh", "-c", "npm install && npm start"]
+
+  mongo:
+    image: mongo:5
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  cpp_server:
+    build:
+      context: ./cpp_server
+      dockerfile: Dockerfile
+    container_name: cpp_server
+    ports:
+      - "8080:8080"
+    volumes:
+      - C:\Users\97254\Documents\TMM\TMM3\Data\database.txt:/app/Data/database.txt
+
+volumes:
+  mongo-data:
