@@ -1,0 +1,22 @@
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+        android:id="@+id/nav_home"
+        android:title= "@string/home" />
+        <item
+            android:id="@+id/search_bar"
+            android:title= "@string/search" />
+        <item
+        android:id="@+id/nav_categories"
+        android:title="@string/categories" />
+        <item
+        android:id="@+id/nav_settings"
+        android:title="@string/light_dark_mode" />
+        <item
+        android:id="@+id/manager"
+        android:title= "@string/manager" />
+        <item
+        android:id="@+id/log_out"
+        android:title= "@string/log_out" />
+    </menu>

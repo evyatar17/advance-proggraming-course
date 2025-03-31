@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/open_menu"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_menu_24" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="start"
+            android:text="@string/welcome_manager"
+            android:textColor="@color/material_dynamic_primary80"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+            <!-- Column for Category Actions -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Add Category Button -->
+                <Button
+                    android:id="@+id/btn_add_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/add_category"
+                    android:backgroundTint="@color/material_dynamic_secondary10" />
+
+                <!-- Edit Category Button -->
+                <Button
+                    android:id="@+id/btn_edit_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/edit_category"
+                    android:backgroundTint="@color/material_dynamic_secondary10" />
+
+                <!-- Delete Category Button -->
+                <Button
+                    android:id="@+id/btn_delete_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_category"
+                    android:backgroundTint="@color/material_dynamic_secondary10" />
+            </LinearLayout>
+
+            <!-- Space between columns -->
+            <View
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <!-- Column for Movie Actions -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Add Movie Button -->
+                <Button
+                    android:id="@+id/btn_add_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/add_movie"
+                    android:backgroundTint="@color/material_dynamic_secondary10" />
+
+                <!-- Edit Movie Button -->
+                <Button
+                    android:id="@+id/btn_edit_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/edit_movie"
+                    android:backgroundTint="@color/material_dynamic_secondary10" />
+
+                <!-- Delete Movie Button -->
+                <Button
+                    android:id="@+id/btn_delete_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_movie"
+                    android:backgroundTint="@color/material_dynamic_secondary10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_View"
+        android:fitsSystemWindows="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:menu="@menu/drawer_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

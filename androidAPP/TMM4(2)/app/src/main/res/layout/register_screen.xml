@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_gray"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <ImageButton
+        android:id="@+id/home_arrow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/rounded_arrow_back_24"
+        android:contentDescription="@string/right_arrow_button"
+        android:layout_marginTop="10dp"
+        app:tint="#FFFFFF" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/light_gray"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/first_hint"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/light_gray"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/last_hint"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/light_gray"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/username_hint"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/light_gray"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:hint="@string/password_hint"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/blue"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:hint="@string/confirm_password"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/blue"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/PostButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/light_gray"
+        android:textColor="@color/blue"
+        android:text="@string/join_hint" />
+
+</LinearLayout>

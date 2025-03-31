@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">MovieApp</string>
+
+    <!-- Welcome Text -->
+    <string name="welcome_message">Welcome to MovieApp</string>
+    <!-- home screen Text -->
+    <string name="Home">Watch unlimited: TV shows, movies and more</string>
+
+    <!-- Hints -->
+    <string name="username_hint">Username</string>
+    <string name="email_hint">email</string>
+    <string name="password_hint">Password</string>
+    <string name="join_hint">join us</string>
+    <string name="first_hint">First name</string>
+    <string name="last_hint">Last name</string>
+    <string name="image">upload Image</string>
+    <!-- Buttons -->
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_up">sign up</string>
+    <string name="no_account">don\'t have an account yet?</string>
+    <string name="open_menu">open menu</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <!-- video operate -->
+    <string name="video_id_missing">Video ID not provided</string>
+    <string name="video_not_found">Video not found for ID: %1$s</string>
+    <string name="video_play_error">Error playing video</string>
+    <string name="permission_granted">Permission granted</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="right_arrow_button">right arrow</string>
+    <string name="add_category">Add Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="delete_category">Delete Category</string>
+    <string name="add_movie">Add Movie</string>
+    <string name="delete_movie">Delete Movie</string>
+    <string name="edit_movie">Edit Movie</string>
+    <string name="welcome_manager">welcome manager</string>
+    <string name="movieapp">MovieApp</string>
+    <string name="log_out">log out</string>
+    <string name="manager">manager</string>
+    <string name="light_dark_mode">light/dark mode</string>
+    <string name="categories">categories</string>
+    <string name="home">home</string>
+    <string name="enter_movie_id">Enter Movie ID</string>
+    <string name="movie_id">Movie ID</string>
+    <string name="submit">Submit</string>
+    <string name="category_name">Category name</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="search">search</string>
+    <string name="search_movie">enter a movie name</string>
+    <string name="watch">watch</string>
+    <string name="video_path">Video path</string>
+    <string name="image_url_optional">Image URL (optional)</string>
+    <string name="rating_0_10_optional">Rating (0-10, optional)</string>
+    <string name="back">Back</string>
+    <string name="movie_poster">Movie Poster</string>
+</resources>

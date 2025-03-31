@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:enableOnBackInvokedCallback="true"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieApp"
+        tools:targetApi="tiramisu">
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home Activity -->
+        <activity android:name=".LoginActivity" android:exported="true" />
+
+        <!-- Manager Activity -->
+        <activity android:name=".ManagerActivity" android:exported="true" />
+        <activity android:name=".AddMovieActivity" android:exported="true" />
+        <activity android:name=".DeleteMovieActivity" android:exported="true" />
+        <activity android:name=".EditMovieActivity" android:exported="true" />
+
+
+
+        <!-- Movie Info Activity -->
+        <activity android:name=".MovieInfoActivity" android:exported="true" />
+
+        <!-- Register Activity -->
+        <activity android:name=".RegisterActivity" android:exported="true" />
+
+        <!-- Signed Home Activity -->
+        <activity android:name=".SignedHomeActivity" android:exported="true" />
+
+        <!-- Watch Activity -->
+        <activity android:name=".WatchActivity" android:exported="true" />
+        <activity
+            android:name=".movie.ViewMovieActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity
+            android:name=".movie.AddEditCategoryActivity"
+            android:exported="false"
+            android:parentActivityName=".movie.CategoryListActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".movie.CategoryListActivity"
+            android:exported="false"
+            android:parentActivityName=".movie.ViewMovieActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".movie.AddEditMovieActivity"
+            android:exported="false"
+            android:parentActivityName=".movie.ViewMovieActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+
+
+
+
+
+    </application>
+
+</manifest>
